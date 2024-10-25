@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>All Input Types Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(244, 244, 215);
+        }
+        h1 {
+            color: #000000;
+        }
+        form {
+            background-color: rgba(182, 113, 231, 0.453);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="number"],
+        input[type="tel"], input[type="search"], input[type="date"], input[type="time"], input[type="file"],
+        textarea, select input[type="color"], input[type="month"], input[type="range"], input[type="week"]  {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>All Input Types</h1>
+    </center>
+
+<form >
+ 
+    <div class="form-group">
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" placeholder="Enter some text" required>
+    
+        <label for="password-input">Password Input:</label>
+        <input type="password" id="password-input" placeholder="Enter password" required>
+   
+        <label for="email-input">Email Input:</label>
+        <input type="email" id="email-input" placeholder="Enter your email" required>
+    
+        <label for="url-input">URL Input:</label>
+        <input type="url" id="url-input" placeholder="Enter URL" required>
+ 
+        <label for="number-input">Number Input:</label>
+        <input type="number" id="number-input" placeholder="Enter a number" required>
+  
+        <label for="tel-input">Telephone Input:</label>
+        <input type="tel" id="tel-input" placeholder="Enter your phone number" required>
+  
+        <label for="search-input">Search Input:</label>
+        <input type="search" id="search-input" placeholder="Search..." required>
+  
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" required>
+
+        <label for="time-input">Time Input:</label>
+        <input type="time" id="time-input" required>
+
+        <label for="time-input">Date-Time Input:</label>
+        <input type="datetime-local" id="time-input" required>
+
+        <label for="file-input">File Input:</label>
+        <input type="file" id="file-input" required>
+
+        <label for="branch">Course</label>
+        <input type="radio" id="branch" name="branch" required autocomplete="on">Artificial Intelligence and Machine Learning <br>
+        <input type="radio" id="branch" name="branch" required autocomplete="on">Mechanical Engineering <br>
+
+        <label>Checkboxes:</label>
+        <input type="checkbox" id="check1" name="checkbox-group" value="1" >Option1
+        <input type="checkbox" id="check2" name="checkbox-group" value="2">Option2
+
+        <label for="textarea-input">Textarea:</label>
+        <textarea id="textarea-input" rows="4" placeholder="Enter some text" required ></textarea>
+        
+        <input type="hidden" id="hidden-input" value="some-hidden-value" required>
+
+  
+        <label for="color-input">Color Input:</label>
+        <input type="color" id="color-input" value="#ff0000" required>
+   
+        <label for="month-input">Month Input:</label>
+        <input type="month" id="month-input" value="2024-10" required>
+ 
+        <label for="range-input">Range Input :</label>
+        <input type="range" id="range-input" min="0" max="100" value="50" required>
+ 
+        <label for="week-input">Week Input:</label>
+        <input type="week" id="week-input"  required>
+
+        <label for="image-input">Image Input (Click image to submit):</label>
+        <input type="image" id="image-input" src="../Image/image.jpeg" alt="Submit Button" required>
+        <br><br>
+        <input type="reset" value="Reset Form">
+        <br><br>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

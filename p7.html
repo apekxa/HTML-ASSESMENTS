@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Samavartana Samarambha 2020-24 BATCH</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        .first{
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        img{
+            margin-left: 35%;
+        }
+        form{
+            background-color: white;
+            margin: 3px;
+            width:35%;
+            height: 67%;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        form input{
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-top: 8px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+            border-radius: 4px;
+        }
+        form label{
+            color: rgb(14, 13, 13);
+        }
+        .submit{
+            border: none;
+            padding: 10px;
+            min-width: 100px;
+            font-size: 15;
+            font-weight: 500;
+            background-color: rgb(22, 64, 232);
+            color: #fff;
+            border-radius: 2px;
+        }
+        .clear{
+            border: none;
+            padding: 10px;
+            min-width: 100px;
+            font-size: 15;
+            font-weight: 500;
+            background-color: rgb(22, 64, 232);
+            color: #fff;
+            border-radius: 2px;
+            margin-left:55%;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="first">
+        <form>
+            <h1>Samavartana Samarambha  2020-24 BATCH</h1><br><br>
+            <h3>Honouring the BE graduates of 2020-24 Batch students.</h3>
+            <p>Date: 24th August 2024 <br>Venue: VCET Campus <br>Time: 9.00 am</p><hr style="border: 1px solid black;"><br>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="Name" required autocomplete="on"><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" name="email" id="email" required><br>
+            <label for="usn">USN</label><br>
+            <input type="text" id="usn" name="USN" required autocomplete="on"><br>
+            <label for="branch">Branch</label><br>
+            <input type="radio" id="branch" name="branch" required autocomplete="on">Artificial Intelligence and Machine Learning <br>
+            <input type="radio" id="branch" name="branch" required autocomplete="on">Computer Science and Engineering <br>
+            <input type="radio" id="branch" name="branch" required autocomplete="on">Civil Engineering <br>
+            <input type="radio" id="branch" name="branch" required autocomplete="on">Electronics and Communication Engineering <br>
+            <input type="radio" id="branch" name="branch" required autocomplete="on">Mechanical Engineering <br>
+            <br>
+            <label for="confirm">Willing to join for Graduation day on 24/08/2024</label> <br>
+            <input type="radio" id="confirm" required name="confirm">Yes <br>
+            <input type="radio" id="confirm" required name="confirm">No <br><br><br>
+            <button class="submit" type="submit">Submit</button>
+            <button class="clear" type="reset">Clear the Form</button>
+            
+
+        </form>
+    </section>
+   
+
+</body>
+</html>
